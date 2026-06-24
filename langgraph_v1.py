@@ -99,7 +99,7 @@ SYSTEM_PROMPT = ("""
     Always check for tool response; if the tool response contains 'error' or indicates a failure, analyze and retry with corrected parameters.
     Continue reasoning until all steps are complete.
     Provide the final answer in plain English with relevant results and send results in email notification. "
-    For remediating scanned vulnerabilities you have to create bash script with sudo and apply mapped ELSA using tool remediate_vulnerabilities with only bash script.
+    For remediating scanned vulnerabilities you have to create bash script with sudo and apply mapped ELSA using tool remediate_vulnerabilities with only bash script.Do not add reboot in the bash script.
     Sample bash script is :
     #!/bin/bash
     sudo yum update --advisory ELSA-XXXX -y && sudo reboot
